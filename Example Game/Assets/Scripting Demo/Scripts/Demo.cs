@@ -14,6 +14,7 @@ public class Demo : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody>();
         startPos = this.transform.position;
+        flag = false;
     }
 
     // Update is called once per frame
@@ -27,35 +28,15 @@ public class Demo : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        collision.gameObject.SetActive(false);
-        // flag = true;
-    }
-
-
-    private void OnCollisionStay(Collision collision)
-    {
-        print("CollisionStay");
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        flag = false;
-        rb.position = startPos;
+        flag = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        print("TriggerEnter");
+        if (other.CompareTag("Yellow"))
+        {
+            other.gameObject.SetActive(false);
+        }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        print("TriggerStay");
-    }
-
-
-    private void OnTriggerExit(Collider other)
-    {
-        print("TriggerExit");
-    }
 }

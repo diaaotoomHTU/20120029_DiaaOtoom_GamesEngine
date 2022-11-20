@@ -8,6 +8,10 @@ TagManager:
   - Red
   - Wall
   - Coin
+  - Jump Pad
+  - Water
+  - Cube
+  - Ground
   layers:
   - Default
   - TransparentFX

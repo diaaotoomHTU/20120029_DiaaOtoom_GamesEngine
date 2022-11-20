@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 124864119667562289}
   m_Layer: 0
   m_Name: Cube Collectible
-  m_TagString: Untagged
+  m_TagString: Cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

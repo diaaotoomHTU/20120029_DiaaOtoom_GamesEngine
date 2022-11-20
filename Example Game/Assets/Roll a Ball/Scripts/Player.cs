@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    Rigidbody rb;
+    float hor;
+    float ver;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = this.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        hor = Input.GetAxis("Horizontal");
+        ver = Input.GetAxis("Vertical");
+        rb.AddForce(hor, 0f, ver);
     }
 
     private void OnTriggerEnter(Collider other)

@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
         {
             this.transform.position = startPos;
         }
-        rb.AddForce(hor, 0f, ver);
+        rb.AddForce(hor * 2, 0f, ver * 2);
         if (grounded && Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(0, 300f, 0);

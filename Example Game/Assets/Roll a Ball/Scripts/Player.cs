@@ -8,11 +8,13 @@ public class Player : MonoBehaviour
     Vector3 startPos;
     float hor;
     float ver;
+    bool grounded;
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
         startPos = this.transform.position;
+        grounded = false;
     }
 
     // Update is called once per frame
@@ -25,6 +27,10 @@ public class Player : MonoBehaviour
             this.transform.position = startPos;
         }
         rb.AddForce(hor, 0f, ver);
+        if (grounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(0, 300f, 0);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -57,9 +63,19 @@ public class Player : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground") && Input.GetKeyDown(KeyCode.Space))
+        if (collision.gameObject.CompareTag("Ground")) {
+	        grounded = true;
+        }   
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            rb.AddForce(0, 300f, 0);
+            grounded = false;
         }
     }
-}
+
+
+
+ }

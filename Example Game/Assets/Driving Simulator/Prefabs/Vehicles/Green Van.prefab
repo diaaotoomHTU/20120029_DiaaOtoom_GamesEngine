@@ -240,7 +240,6 @@ GameObject:
   - component: {fileID: 8569202799218833430}
   - component: {fileID: 8569202799215979584}
   - component: {fileID: 8569202799216898764}
-  - component: {fileID: 5225227371815676422}
   m_Layer: 0
   m_Name: Wheel_fr
   m_TagString: Untagged
@@ -314,20 +313,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5225227371815676422
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8569202799219136282}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300008, guid: 576da546347c040428bb0204a37e73d3, type: 3}
 --- !u!1 &8569202799219164840
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +324,6 @@ GameObject:
   - component: {fileID: 8569202799218864442}
   - component: {fileID: 8569202799215985298}
   - component: {fileID: 8569202799216945430}
-  - component: {fileID: 9070025007332201224}
   m_Layer: 0
   m_Name: Wheel_fl
   m_TagString: Untagged
@@ -413,20 +397,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &9070025007332201224
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8569202799219164840}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300004, guid: 576da546347c040428bb0204a37e73d3, type: 3}
 --- !u!1 &8569202799219174730
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +408,6 @@ GameObject:
   - component: {fileID: 8569202799218858378}
   - component: {fileID: 8569202799215930880}
   - component: {fileID: 8569202799216929692}
-  - component: {fileID: 4290866786731022863}
   m_Layer: 0
   m_Name: Wheel_rl
   m_TagString: Untagged
@@ -512,20 +481,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4290866786731022863
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8569202799219174730}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: 576da546347c040428bb0204a37e73d3, type: 3}
 --- !u!1 &8569202799219192802
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +492,6 @@ GameObject:
   - component: {fileID: 8569202799218863722}
   - component: {fileID: 8569202799215958528}
   - component: {fileID: 8569202799216990604}
-  - component: {fileID: 1468065270810882364}
   m_Layer: 0
   m_Name: Wheel_rr
   m_TagString: Untagged
@@ -611,20 +565,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1468065270810882364
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8569202799219192802}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: 576da546347c040428bb0204a37e73d3, type: 3}
 --- !u!1 &8569202799219210082
 GameObject:
   m_ObjectHideFlags: 0

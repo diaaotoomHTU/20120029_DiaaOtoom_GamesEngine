@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Road
   - Road Gate
+  - Dog
+  - Accelerate
+  - Decelerate
+  - Inverse
+  - Score Gate
+  - Instantiate Gate
+  - Obstacle
   layers:
   - Default
   - TransparentFX

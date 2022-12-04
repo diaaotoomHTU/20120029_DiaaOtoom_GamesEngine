@@ -19,9 +19,9 @@ public class Spawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Road Gate"))
+        if (other.CompareTag("Car"))
         {
-            Instantiate(road, new Vector3(0, 0, other.gameObject.transform.parent.position.z + 100), Quaternion.identity);
+            Instantiate(road, new Vector3(0, 0, this.transform.parent.position.z + 100), Quaternion.identity);
         }
     }
 }

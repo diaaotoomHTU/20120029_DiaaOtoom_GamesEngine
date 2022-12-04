@@ -13,6 +13,7 @@ TagManager:
   - Score Gate
   - Instantiate Gate
   - Obstacle
+  - Car
   layers:
   - Default
   - TransparentFX

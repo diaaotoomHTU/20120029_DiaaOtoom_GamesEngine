@@ -14,6 +14,8 @@ TagManager:
   - Instantiate Gate
   - Obstacle
   - Car
+  - Plane
+  - Cannon Ball
   layers:
   - Default
   - TransparentFX

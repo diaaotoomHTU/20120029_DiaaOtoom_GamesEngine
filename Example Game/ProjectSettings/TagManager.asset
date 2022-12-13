@@ -16,6 +16,12 @@ TagManager:
   - Car
   - Plane
   - Cannon Ball
+  - Apple
+  - Banana
+  - Bone
+  - Carrot
+  - Cookie
+  - Energy Drink
   layers:
   - Default
   - TransparentFX

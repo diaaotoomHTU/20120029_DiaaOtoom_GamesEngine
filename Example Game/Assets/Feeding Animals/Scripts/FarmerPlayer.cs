@@ -4,23 +4,14 @@ using UnityEngine;
 
 public class FarmerPlayer : MonoBehaviour
 {
-    public GameObject apple;
-    public GameObject banana;
-    public GameObject bone;
-    public GameObject carrot;
-    public GameObject cookie;
-    public GameObject steak;
-    List<GameObject> inventory;
+
+    [SerializeField] GameObject[] food;
+    [SerializeField] Transform spawnPoint;
+    GameObject clone;
     // Start is called before the first frame update
     void Start()
     {
-        inventory = new List<GameObject>();
-        inventory.Add(apple);
-        inventory.Add(banana);
-        inventory.Add(bone);
-        inventory.Add(carrot);
-        inventory.Add(cookie);
-        inventory.Add(steak);
+
     }
 
     // Update is called once per frame
@@ -28,15 +19,16 @@ public class FarmerPlayer : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A) && this.transform.position.x > -20)
         {
-            this.transform.Translate(-0.3f, 0, 0);
+            this.transform.Translate(-0.15f, 0, 0);
         }
         if (Input.GetKey(KeyCode.D) && this.transform.position.x < 20)
         {
-            this.transform.Translate(0.3f, 0, 0);
+            this.transform.Translate(0.15f, 0, 0);
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            
+            clone = Instantiate(food[Random.Range(0, 6)], spawnPoint.position, Quaternion.identity);
+            clone.GetComponent<Rigidbody>().AddForce(0, 0, 500);
         }
     }
 }

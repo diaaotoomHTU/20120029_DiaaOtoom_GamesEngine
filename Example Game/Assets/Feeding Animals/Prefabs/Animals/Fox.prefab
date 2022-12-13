@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7858553263870600058}
   - component: {fileID: 7858553263877693644}
   - component: {fileID: 7858553263870236438}
+  - component: {fileID: 957504554753893387}
   m_Layer: 0
   m_Name: Fox
-  m_TagString: Untagged
+  m_TagString: Bone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,6 +66,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdcbbf329dd467548b0d21e7c54c559a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &957504554753893387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7858553263870277752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10268d58ed9db4e4aab2b06caa455f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7858553263870278104
@@ -179,8 +192,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7858553265344348611}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.122, z: 0}
-  m_LocalScale: {x: 0.078465365, y: 0.20739417, z: 0.31836435}
+  m_LocalPosition: {x: 0, y: 0.21831, z: 0}
+  m_LocalScale: {x: 0.078465365, y: 0.40002117, z: 0.31836435}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7858553263870600058}

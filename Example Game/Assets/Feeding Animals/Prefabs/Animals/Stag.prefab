@@ -193,9 +193,10 @@ GameObject:
   - component: {fileID: 3930626988628630552}
   - component: {fileID: 3930626988621072208}
   - component: {fileID: 3930626988628460036}
+  - component: {fileID: -3931982914937961065}
   m_Layer: 0
   m_Name: Stag
-  m_TagString: Untagged
+  m_TagString: Carrot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,5 +248,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdcbbf329dd467548b0d21e7c54c559a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3931982914937961065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3930626988628411118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10268d58ed9db4e4aab2b06caa455f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

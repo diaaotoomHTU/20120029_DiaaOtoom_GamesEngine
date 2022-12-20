@@ -22,6 +22,11 @@ TagManager:
   - Carrot
   - Cookie
   - Energy Drink
+  - Ground
+  - Jump Pad
+  - Coin
+  - Water
+  - Cube
   layers:
   - Default
   - TransparentFX

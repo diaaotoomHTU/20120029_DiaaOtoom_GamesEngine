@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Player : MonoBehaviour
     float hor;
     float ver;
     bool grounded;
+    [SerializeField] Text scoreText;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,9 +50,10 @@ public class Player : MonoBehaviour
         else if (other.CompareTag("Water"))
         {
             this.transform.position = startPos;
+            GameManager.score -= 5;
         }
-        
-        print(GameManager.score);
+        scoreText.text = "Score: " + GameManager.score;
+
     }
 
     private void OnCollisionEnter(Collision collision)

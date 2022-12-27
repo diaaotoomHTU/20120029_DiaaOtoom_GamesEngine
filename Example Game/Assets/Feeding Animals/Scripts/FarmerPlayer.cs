@@ -8,6 +8,7 @@ public class FarmerPlayer : MonoBehaviour
     [SerializeField] GameObject[] food;
     [SerializeField] Transform spawnPoint;
     GameObject clone;
+    float speed = 0.15f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +18,15 @@ public class FarmerPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A) && this.transform.position.x > -20)
-        {
-            this.transform.Translate(-0.15f, 0, 0);
-        }
-        if (Input.GetKey(KeyCode.D) && this.transform.position.x < 20)
-        {
-            this.transform.Translate(0.15f, 0, 0);
-        }
+        float verticalMovement = Input.GetAxis("Vertical") * speed;
+        float horizontalMovement = Input.GetAxis("Horizontal") * speed;
+        Vector3 movement = Vector3.forward * verticalMovement + Vector3.right * horizontalMovement;
+        this.transform.Translate(movement);
+        Vector3 newPosition = this.transform.position + movement;
+        newPosition.x = Mathf.Clamp(newPosition.x, -15, 15);
+        newPosition.z = Mathf.Clamp(newPosition.z, -0, 15);
+        this.transform.position = newPosition;
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             clone = Instantiate(food[Random.Range(0, 6)], spawnPoint.position, Quaternion.identity);
